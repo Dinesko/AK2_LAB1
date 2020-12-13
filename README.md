@@ -57,14 +57,12 @@ Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
 
 diff --git a/calculator.cpp b/calculator.cpp
 index b91afea..d93e35b 100644
---- a/calculator.cpp
-+++ b/calculator.cpp
+b/calculator.cpp
 @@ -2,7 +2,7 @@
  
  int Calculator::Add (double a, double b)
  {
--    return a + b;
-+	return a + b + 0.5;
+	return a + b + 0.5;
  }
  
  int Calculator::Sub (double a, double b)
@@ -88,14 +86,12 @@ Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
 
 diff --git a/calculator.cpp b/calculator.cpp
 index d93e35b..d10f529 100644
---- a/calculator.cpp
-+++ b/calculator.cpp
+b/calculator.cpp
 @@ -7,5 +7,5 @@ int Calculator::Add (double a, double b)
  
  int Calculator::Sub (double a, double b)
  {
--    return Add (a, -b);
-+	return Add (a, -b);
+	return Add (a, -b);
  }
 diff --git a/calculator.h b/calculator.h
 index 3740907..d59d596 100644
@@ -105,12 +101,9 @@ index 3740907..d59d596 100644
  
  class Calculator
  {
--    public:
--        int Add (double, double);
--        int Sub (double, double);
-+	public:
-+		int Add (double, double);
-+		int Sub (double, double);
+	public:
+		int Add (double, double);
+		int Sub (double, double);
  };
  
  #endif//CALCULATOR_H
