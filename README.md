@@ -32,9 +32,6 @@ class Calculator
 };
 
 #endif//CALCULATOR_H
-
-#endif//CALCULATOR_H
-
 ```
 ## Патчі: 
 
@@ -95,8 +92,7 @@ b/calculator.cpp
  }
 diff --git a/calculator.h b/calculator.h
 index 3740907..d59d596 100644
---- a/calculator.h
-+++ b/calculator.h
+b/calculator.h
 @@ -3,9 +3,9 @@
  
  class Calculator
